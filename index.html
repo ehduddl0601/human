@@ -9,29 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="side">
-        <ul>
-            <li><a href="#a"><img src="./img/side1.png" alt="" width="35">카톡상담</a></li>
-            <li><a href="#a"><img src="./img/side2.png" alt="" width="35">전화상담</a></li>
-            <li><a href="#a"><img src="./img/side3.png" alt="" width="35">진료예약</a></li>
-            <li><a href="#a"><img src="./img/side4.png" alt="" width="35">비용문의</a></li>
-        </ul>
-    </div>
-    <div id="side_hover">
-        <ul>
-            <li class="side_h1"><a href="#a"><img src="./img/side1_h.png" alt="" width="35">카톡상담</a></li>
-            <li class="side_h2"><a href="#a"><img src="./img/side2_h.png" alt="" width="35">전화상담</a></li>
-            <li class="side_h3"><a href="#a"><img src="./img/side3_h.png" alt="" width="35">진료예약</a></li>
-            <li class="side_h4"><a href="#a"><img src="./img/side4_h.png" alt="" width="35">비용문의</a></li>
-        </ul>
-    </div>
-    <div id="hover_box">
-        <ul>
-            <li class="first_h"><a href="#"></a></li>
-            <li class="second_h"><a href="#"></a></li>
-            <li class="third_h"><a href="#"></a></li>
-            <li class="fourth_h"><a href="#"></a></li>
-        </ul>
+    <div id="side_wrap">
+        <div id="side">
+            <ul>
+                <li><a href="#a"><img src="./img/side1.png" alt="" width="35">카톡상담</a></li>
+                <li><a href="#a"><img src="./img/side2.png" alt="" width="35">전화상담</a></li>
+                <li><a href="#a"><img src="./img/side3.png" alt="" width="35">진료예약</a></li>
+                <li><a href="#a"><img src="./img/side4.png" alt="" width="35">비용문의</a></li>
+            </ul>
+        </div>
+        <div id="side_hover">
+            <ul>
+                <li class="side_h1"><a href="#a"><img src="./img/side1_h.png" alt="" width="35">카톡상담</a></li>
+                <li class="side_h2"><a href="#a"><img src="./img/side2_h.png" alt="" width="35">전화상담</a></li>
+                <li class="side_h3"><a href="#a"><img src="./img/side3_h.png" alt="" width="35">진료예약</a></li>
+                <li class="side_h4"><a href="#a"><img src="./img/side4_h.png" alt="" width="35">비용문의</a></li>
+            </ul>
+        </div>
+        <div id="hover_box">
+            <ul>
+                <li class="first_h"><a href="#"></a></li>
+                <li class="second_h"><a href="#"></a></li>
+                <li class="third_h"><a href="#"></a></li>
+                <li class="fourth_h"><a href="#"></a></li>
+            </ul>
+        </div>
     </div>
     <div id="header">
         <h1><a href="./index.html"><img src="./img/logo.gif" alt="logo"></a></h1>
@@ -274,33 +276,44 @@
               function(){
             $(this).children('#sub_gnb').css('display', 'none');
             });
+
+            var time;
+            var delay = 150;
             $('.first_h').hover(
                 function(){
                     $('.side_h1').css('right', '90px');
-                },
+                }, 
                 function(){
-                    $('.side_h1').css('right', '0');
+                    time = setTimeout(function(){
+                        $('.side_h1').css('right', '0');
+                }, delay)
             });
             $('.second_h').hover(
                 function(){
                     $('.side_h2').css('right', '90px');
                 },
                 function(){
-                    $('.side_h2').css('right', '0');
+                    time = setTimeout(function(){
+                        $('.side_h2').css('right', '0');
+                }, delay)
             });
             $('.third_h').hover(
                 function(){
                     $('.side_h3').css('right', '90px');
                 },
                 function(){
-                    $('.side_h3').css('right', '0');
+                    time = setTimeout(function(){
+                        $('.side_h3').css('right', '0');
+                }, delay)
             });
             $('.fourth_h').hover(
                 function(){
                     $('.side_h4').css('right', '90px');
                 },
                 function(){
-                    $('.side_h4').css('right', '0');
+                    time = setTimeout(function(){
+                        $('.side_h4').css('right', '0');
+                }, delay)
             });
             var img_num = 0;
             var img_width = 1893;
