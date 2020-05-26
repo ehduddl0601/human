@@ -17,7 +17,7 @@ ul{
     position: fixed;
     right: 0;
     top: 150px;
-    z-index: 10000;
+    z-index: 10;
     transition: 0.5s;
 }
 #side ul li{
@@ -25,7 +25,9 @@ ul{
     height: 100px;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
-    border-bottom: 1px solid #555;
+}
+#side ul li:nth-child(4){
+    border-bottom: none;
 }
 #side ul li a{
     text-align: center;
@@ -37,6 +39,77 @@ ul{
     padding: 20px 20px;
     padding-left: 23px;
     padding-bottom: 0;
+}
+#hover_box{
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 10000;
+    transition: 0.5s;
+}
+#hover_box ul li{
+    width: 90px;
+    height: 100px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.7); */
+}
+#hover_box ul li:nth-child(4){
+    border-bottom: none;
+}
+#hover_box ul li a{
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 40px;
+}
+#side_hover{
+    position: fixed;
+    right: -90px;
+    top: 150px;
+    z-index: 1000;
+    transition: 0.5s;
+}
+#side_hover ul li{
+    width: 90px;
+    height: 100px;
+    text-align: center;
+    background: #fff;
+}
+#side_hover ul li a{
+    text-align: center;
+    color: #1a4f7a;
+    font-weight: bold;
+    font-size: 14px;
+}
+#side_hover img{
+    display: inline-block;
+    padding: 20px 20px;
+    padding-left: 23px;
+    padding-bottom: 0;
+}
+.side_h1{
+    transition: 0.3s;
+    position: absolute;
+    right: 0;
+}
+.side_h2{
+    transition: 0.3s;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+.side_h3{
+    transition: 0.3s;
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+.side_h4{
+    transition: 0.3s;
+    position: absolute;
+    right: 0;
+    top: 300px;
 }
 #header{
     width: 1020px;
