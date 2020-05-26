@@ -13,7 +13,31 @@ a{
 ul{
     list-style-type: none;
 }
-
+#side{
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 10000;
+    transition: 0.5s;
+}
+#side ul li{
+    width: 90px;
+    height: 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #555;
+}
+#side ul li a{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+#side img{
+    display: inline-block;
+    padding: 20px 20px;
+    padding-left: 23px;
+    padding-bottom: 0;
+}
 #header{
     width: 1020px;
     height: 115px;

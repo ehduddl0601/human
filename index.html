@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="side">
+        <ul>
+            <li><a href="#"><img src="./img/side1.png" alt="" width="35">카톡상담</a></li>
+            <li><a href="#"><img src="./img/side2.png" alt="" width="35">전화상담</a></li>
+            <li><a href="#"><img src="./img/side3.png" alt="" width="35">진료예약</a></li>
+            <li><a href="#"><img src="./img/side4.png" alt="" width="35">비용문의</a></li>
+        </ul>
+    </div>
     <div id="header">
         <h1><a href="./index.html"><img src="./img/logo.gif" alt="logo"></a></h1>
         <ul id="language">
@@ -251,7 +259,13 @@
               function(){
             $(this).children('#sub_gnb').css('display', 'none');
             });
-
+            $('#side ul li').hover(
+                function(){
+                    $(this).css('background', 'rgba(0, 0, 0, 0.8)');
+                },
+                function(){
+                    $(this).css('background', 'rgba(0, 0, 0, 0.7)');
+            });
             var img_num = 0;
             var img_width = 1893;
             function change_img(num){
@@ -266,6 +280,17 @@
                 change_img(img_num);
                 img_num++;
             }, 5000)
+
+            $(window).scroll(function () {
+            var height = $(document).scrollTop();
+            console.log(height);
+            if(height > 450){
+                $('#side').css('right', '-90px');
+            }
+            else{
+                $('#side').css('right', '0');
+            }
+            });
         });
     </script>
 </body>
