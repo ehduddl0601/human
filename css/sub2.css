@@ -301,8 +301,9 @@ ul{
 
 #change{
     /* border: 2px solid violet; */
-    width: 100%;
+    width: 1020px;
     text-align: center;
+    margin: 0 auto;
     margin-top: 170px;
     overflow: hidden;
 }
@@ -313,25 +314,27 @@ ul{
 }
 
 #change > #change-ul{
-    width: 50%;
-    margin: 0 auto;
+    width: 1020px;
+    height: 120px;
     /* border: 2px solid orange; */
 }
-#change > #change-ul > .change-li, #change > #change-ul > .arrow{
+#change > #change-ul > li{
     display: block;
     float: left;
-    margin-right: 7.6%;
     height: 120px;
-    /* border: 2px solid green; */
     position: relative;
 }
+#change > #change-ul > .arrow{
+    margin: 0 88px;
+    /* border: 2px solid green; */
+}
 #change > #change-ul > li:last-child{
-    margin-right: 0%;
+    margin-right: 0;
 }
 
 #change > #change-ul > .arrow > p {
     line-height: 120px;
-    font-size: 16px;
+    font-size: 26px;
     color: #949494;
 }
 
