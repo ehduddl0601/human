@@ -51,6 +51,7 @@ ul{
     width: 90px;
     height: 100px;
     text-align: center;
+    position: relative;
     /* background: rgba(0, 0, 0, 0.7); */
 }
 #hover_box ul li:nth-child(4){
@@ -62,6 +63,14 @@ ul{
     color: #fff;
     font-size: 14px;
     padding: 40px;
+}
+#kakao-talk-channel-chat-button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 10px;
+    display: block;
 }
 #side_hover{
     position: fixed;
