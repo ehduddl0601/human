@@ -183,7 +183,6 @@ ul{
     font-weight: 500;
     color: #fff;
     margin-left: 470px;
-    margin-right: 50px;
 }
 #sub_gnb li{
     float: left;
@@ -193,7 +192,11 @@ ul{
     color: #fff;
 }
 #sub_gnb li:nth-child(2){
-    margin: 0 10px;
+    margin: 0 20px;
+    width: 2px;
+    height: 40px;
+    background: #fff;
+    margin-top: 33px;
 }
 /* visual */
 #visual_wrap{
