@@ -412,6 +412,16 @@ ul{
     height: 210px;
     margin-right: 25px;
     float: left;
+    background-image: url(../img/menu3.jpg);
+}
+#third > ul > li #kakao-talk-channel-chat-button{
+    /* opacity: 0;
+    padding: 50px; */
+    /* border: 1px solid red; */
+    position: relative;
+    left: 63px;
+    text-align: center;
+    line-height: 290px;
 }
 #third > ul > li:nth-child(4){
     margin-right: 0;

@@ -137,10 +137,8 @@
         </div>
 
         <div class="sct2">
-            <img src="./img/map.jpg" alt="위치" class="map-img">
             <div class="mapguide">
-                <p>경기도 성남시 분당구 삼평동 670번지 유스페이스 1동 306호</p>
-                <span>신분당선 판교역 4번출구</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.5411074833783!2d127.104323615583!3d37.400683279829174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca7c3bc0284df%3A0x77db63f24f216640!2z7IKs656M6re466as6rOg7LmY6rO87J2Y7JuQ!5e0!3m2!1sko!2skr!4v1590545862728!5m2!1sko!2skr" width="900" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
 
             <div class="parkings">
@@ -187,10 +185,19 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="col-box">
-                            <img src="./img/menu3.jpg" alt="카카오톡 플러스" width="160">
-                        </div>
-                    </div>
+                        <div class="col-box" id="chat">
+                        <h3>진료 및 예약상담</h3>
+                       <div
+                       id="kakao-talk-channel-chat-button"
+                       data-channel-public-id="human_dentist"
+                       data-title="consult"
+                       data-size="small"
+                       data-color="yellow"
+                       data-shape="pc"
+                       data-support-multiple-densities="true"
+                       ></div>
+                       </div>
+                       </div>
                 </div>
             </div>
         </div>
@@ -263,16 +270,7 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-   
+  
 <!-- gnb slider -->
     <script>
         $(function(){
@@ -283,6 +281,20 @@
               function(){
             $(this).children('#sub_gnb').css('display', 'none');
             });
+
+            window.kakaoAsyncInit = function() {
+    Kakao.Channel.createChatButton({
+        container: '#kakao-talk-channel-chat-button',
+    });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//developers.kakao.com/sdk/js/kakao.plusfriend.min.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'kakao-js-sdk');
         });
     </script>
     

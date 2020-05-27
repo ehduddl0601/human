@@ -171,11 +171,7 @@ ul{
 
 
 .sct2, .sct4 {padding:70px 0;}
-.sct2 .map-img {width: 100%;}
-.sct2 .mapguide {position: relative; padding: 75px 0;}
-.sct2 .mapguide p {font-size: 30px; text-align: center; color: #30567a;}
-.sct2 .mapguide span {font-size: 22px; text-align: center; color: #000000; display: block;}
-
+.sct2 .mapguide {text-align: center;}
 
 .sct2 .parkings {position: relative; padding: 75px 0; width: 920px; margin: 0 auto;}
 .sct2 .parkings .parking {position: relative; padding:0 20px; color: #30567b; font-size: 20px;}
@@ -209,7 +205,8 @@ ul{
 
 .sct2 .diagnosis .diagnosis-tel .col-md-3 .col-box h3 {font-size: 30px; color: #30567b; position: relative; padding-left: 10px; padding-bottom: 8px;}
 .sct2 .diagnosis .diagnosis-tel .col-md-3 .col-box h3:before {position: absolute; content:''; width:1px; height: 20px; background-color: #30567b; left: 0; top: 9px;}
-.sct2 .diagnosis .diagnosis-tel .col-md-3 .col-box p {color: #14c7db; font-size: 33px;}
+.sct2 .diagnosis .diagnosis-tel .col-md-3 .col-box p {color: #14c7db; font-size: 33px; }
+.sct2 .diagnosis .diagnosis-tel .col-md-3 #chat h3::before{ width:0px; height: 0px;}
 
 
 .sct3 {background-image: url('../img/sct3-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}

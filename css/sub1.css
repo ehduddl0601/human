@@ -236,19 +236,21 @@ ul{
 }
 #circle ul li{
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin: 0 20px;
     border-radius: 50%;
-    line-height: 200px;
+    line-height: 180px;
     font-size: 26px;
     font-weight: normal;
-    color: #fff;
-    transition: 0.5s;
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
 }
 #circle ul li:hover{
-    font-size: 30px;
-    font-weight: bold;
+    transform: scale(1.1);
+}
+#circle ul li a{
+    color: #fff;
 }
 #circle ul li:nth-child(1){
     background-color: #85cdc1;

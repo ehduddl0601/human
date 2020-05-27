@@ -205,7 +205,15 @@
             <ul>
                 <li><img src="./img/menu1.jpg" alt="info1"></li>
                 <li><img src="./img/menu2.jpg" alt="info2"></li>
-                <li><img src="./img/menu3.jpg" alt="info3"></li>
+                <li><div
+                    id="kakao-talk-channel-chat-button"
+                    data-channel-public-id="human_dentist"
+                    data-title="consult"
+                    data-size="small"
+                    data-color="yellow"
+                    data-shape="pc"
+                    data-support-multiple-densities="true"
+                    ></div></li>
                 <li><img src="./img/menu4.jpg" alt="info4"></li>
             </ul>
         </div>
@@ -342,6 +350,20 @@
                 $('#hover_box').css('right', '0');
             }
             });
+
+            window.kakaoAsyncInit = function() {
+            Kakao.Channel.createChatButton({
+            container: '#kakao-talk-channel-chat-button',
+            });
+            };
+
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = '//developers.kakao.com/sdk/js/kakao.plusfriend.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+            })(document, 'script', 'kakao-js-sdk');
         });
     </script>
 </body>
