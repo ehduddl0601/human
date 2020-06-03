@@ -13,28 +13,28 @@ a{
 ul{
     list-style-type: none;
 }
-#side{
+#side_img{
     position: fixed;
     right: 0;
     top: 150px;
     z-index: 1000;
     transition: 0.5s;
 }
-#side ul li{
+#side_img ul li{
     width: 90px;
     height: 100px;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
 }
-#side ul li:nth-child(4){
+#side_img ul li:nth-child(4){
     border-bottom: none;
 }
-#side ul li a{
+#side_img ul li a{
     text-align: center;
     color: #fff;
     font-size: 14px;
 }
-#side img{
+#side_img img{
     display: inline-block;
     padding: 20px 20px;
     padding-left: 23px;
@@ -72,26 +72,26 @@ ul{
     height: 10px;
     display: block;
 }
-#side_hover{
+#side_hover_img{
     position: fixed;
     right: -90px;
     top: 150px;
     z-index: 1000;
     transition: 0.5s;
 }
-#side_hover ul li{
+#side_hover_img ul li{
     width: 90px;
     height: 100px;
     text-align: center;
     background: #fff;
 }
-#side_hover ul li a{
+#side_hover_img ul li a{
     text-align: center;
     color: #1a4f7a;
     font-weight: bold;
     font-size: 14px;
 }
-#side_hover img{
+#side_hover_img img{
     display: inline-block;
     padding: 20px 20px;
     padding-left: 23px;
@@ -255,7 +255,7 @@ ul{
     border: 2px solid #ddd;
 }
 #first h2{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
 }
 #first p{
@@ -450,9 +450,6 @@ ul{
     margin: 0 auto;
     color: #fff;
 }
-#system b{
-    font-weight: 600;
-}
 #system h1{
     display: inline-block;
     margin-top: 100px;
@@ -480,6 +477,9 @@ ul{
 #system span{
     color: #40c6c8;
 }
+#system b{
+    font-weight: 800;
+}
 /* map */
 #map_wrap{
     width: 100%;
@@ -487,6 +487,7 @@ ul{
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 #map{
     width: 1020px;
